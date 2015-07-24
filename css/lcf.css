@@ -2,9 +2,18 @@ body
 {
     min-height: 100%;
     font-family: 'Hiragino Sans GB', 'Microsoft YaHei', '黑体', serif;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
 }
 
-.out-container
+div{
+    margin: 0;
+    padding: 0;
+}
+
+.outer-container
 {
     max-width: 1920px;
 }
@@ -12,5 +21,100 @@ body
 .header
 {
     max-width: 1920px;
-    background-image: url(../pic/);
+    height: 621px;
+    background-image: url(../pic/header.jpg);
+    background-position: center;
+}
+
+.needinghelp-outer-container
+{
+    height: 986px;
+}
+
+.needinghelp-inner-container
+{
+    width: 1024px;
+    margin: auto;
+    padding: 3em 0 2em 0;
+    font-size: 1.1em;
+}
+
+.needinghelp-paragraph
+{
+    width: 1014px;
+    margin: 1em auto 1em auto;
+}
+
+.needinghelp-picture
+{
+    width: 1014px;
+    height: 607px;
+    margin: 3em auto 1em auto;
+    background-image: url(../pic/needinghelp.jpg);
+}
+
+.scene-outer-container
+{
+    height: 1095px;
+    background-color: RGB(255, 167, 157);
+}
+
+.scene-inner-container
+{
+    width: 1024px;
+    margin: auto;
+    padding: 2em 0 2em 0;
+    font-size: 1.1em;
+}
+
+.scene-header
+{
+    width: 300px;
+    height: 128px;
+    background-color: purple;
+    margin: 1.2em auto 1.5em auto;
+    line-height: 128px;
+    text-align: center;
+    font-size: 2.7em;
+}
+
+.scene-paragraph
+{
+    width: 1014px;
+    margin: 1em auto 1em auto;
+}
+
+.scene-picture
+{
+    width: 1014px;
+    height: 551px;
+    margin: 2em auto 2em auto;
+    background-image: url(../pic/scene1.jpg);
+}
+
+.partition-outer-container
+{
+    height: 1160px;
+}
+
+.partition-inner-container
+{
+    width: 1024px;
+    margin: auto;
+    padding: 2em 0 2em 0;
+    font-size: 1.1em;
+}
+
+.partition-header
+{
+    width: 300px;
+    height: 128px;
+    background-color: purple;
+    margin: 1.2em auto 1.5em auto;
+}
+
+.partition-paragraph
+{
+    width: 1014px;
+    margin: 1em auto 1em auto;
 }
