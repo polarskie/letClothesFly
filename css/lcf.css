@@ -111,10 +111,54 @@ div{
     height: 128px;
     background-color: purple;
     margin: 1.2em auto 1.5em auto;
+    line-height: 128px;
+    text-align: center;
+    font-size: 2.7em;
 }
 
 .partition-paragraph
 {
     width: 1014px;
     margin: 1em auto 1em auto;
+}
+
+.partition-list
+{
+    color: RGB(255, 150, 154);
+}
+
+.partition-item
+{
+    color: RGB(255, 150, 154);
+}
+
+.outer-footer
+{
+    height: 1577px;
+}
+.inner-footer
+{
+    width: 1024px;
+    margin: auto;
+}
+.footer-header
+{
+    font-size: 2.4em;
+    text-align: center;
+}
+.cooperation-ngo
+{
+    height: 582px;
+}
+.ngo-table
+{
+    width: 960px;
+}
+.cooperation-company
+{
+    height: 480px;
+}
+.share-link
+{
+    height: 510px;/*515*/
 }
