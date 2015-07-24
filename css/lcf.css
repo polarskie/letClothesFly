@@ -1,0 +1,16 @@
+body
+{
+    min-height: 100%;
+    font-family: 'Hiragino Sans GB', 'Microsoft YaHei', '黑体', serif;
+}
+
+.out-container
+{
+    max-width: 1920px;
+}
+
+.header
+{
+    max-width: 1920px;
+    background-image: url(../pic/);
+}
