@@ -71,7 +71,8 @@ div{
 {
     width: 300px;
     height: 128px;
-    background-color: purple;
+    background-image: url(../pic/logos.png);
+    background-position: -298px -1164px;
     margin: 1.2em auto 1.5em auto;
     line-height: 128px;
     text-align: center;
@@ -103,13 +104,13 @@ div{
     margin: auto;
     padding: 2em 0 2em 0;
     font-size: 1.1em;
+    background-image: url(../pic/logos.png);
 }
 
 .partition-header
 {
     width: 300px;
     height: 128px;
-    background-color: purple;
     margin: 1.2em auto 1.5em auto;
     line-height: 128px;
     text-align: center;
@@ -169,5 +170,5 @@ div{
 }
 .share-link
 {
-    height: 510px;/*515*/
+    height: 510px;
 }
