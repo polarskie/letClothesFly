@@ -1,10 +1,65 @@
-.share {
-    background-color: #e43031;
-    width: 160px;
-    height: 46px;
-    padding:4px;
-    margin:20px;
-    border-radius: 23px;
-    color:#FFF;
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css);
 
+
+.wechat{
+    color: #FFF;
+    top: 200px;
+    position: absolute;
+}
+#wbclick{
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    top: 0px;
+    display: block;
+    width: 96px;
+    padding: 0px 10px 0px 10px;
+    margin: 18px;
+    cursor: pointer;
+}
+
+.share {
+    position:center;
+    display: block;
+    background-color: #e43031;
+    width: 96px;
+    padding: 4px 10px 4px 10px;
+    margin: 20px;
+    border-radius: 23px;
+    color: #FFF;
+    font-family: 'cwTeXMing', serif;
+    cursor:pointer;
+}
+
+.container{
+    width:100%;
+    height:800px;
+   /* background-color:black;*/
+    background-color: #da788f;
+}
+.row{
+/*    background-color: gray;*/
+
+}
+
+.qqshare{
+    position:absolute;
+/*    background-color:red;*/
+    height:100%;
+    left:25%;
+    width:25%;
+    text-align:right;
+}
+.weiboshare{
+    position:absolute;
+/*    background-color:blue;*/
+    height:100%;
+    left:50%;
+    width:25%;
+}
+.qq{
+    float:right;
+}
+.weibo{
+    float:left;
 }

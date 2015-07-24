@@ -8,63 +8,70 @@
             charset="utf-8"></script>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="//libs.baidu.com/fontawesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-<wb:share-button addition="simple" type="button" default_text="你不再需要的,却是他们渴求的!我们邀请您加入 让衣物飞爱心公益行动,让您闲置的衣物飞到山区,让孩子们脸上的笑容更灿烂!" pic="http%3A%2F%2Futopia.polarsky.cc%2FletClouthFly%2Ffly.png" picture_search="false"></wb:share-button>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="qqshare">
+
+            <label class="share qq" onclick="qqjump()"><span class="fa fa-qq" style="border-right-width: 4px;padding-right: 8px"></span>分享至QQ </label>
 
 
-<label class="share"><span class="fa fa-weibo"></span>分享至微博</label>
+            <label class="wechat" ><span class="fa fa-weixin">  </span> 扫码分享至朋友圈</label>
+
+        </div>
+        <div class="weiboshare ">
+            <label class="share" onclick="wbjump()"><span class="fa fa-weibo"></span> 分享至微博</label>
+            <div id="wbclick">
+
+                <wb:share-button addition="simple"  type="button" default_text="你不再需要的,却是他们渴求的!我们邀请您加入 让衣物飞爱心公益行动,让您闲置的衣物飞到山区,让孩子们脸上的笑容更灿烂!" pic="http%3A%2F%2Futopia.polarsky.cc%2FletClouthFly%2Ffly.png" picture_search="false"></wb:share-button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
 
 
-<label class="share"><span class="fa fa-qq-icon"></span>分享至qq</label>
+
+    </div>
+</div>
+
+
+
 
 <script type="text/javascript">
-    (function(){
+
+    function qqjump(){
         var p = {
             url:location.href,
-            showcount:'0',/*是否显示分享总数,显示：'1'，不显示：'0' */
-            desc:'',/*默认分享理由(可选)*/
-            summary:'',/*分享摘要(可选)*/
-            title:'',/*分享标题(可选)*/
-            site:'',/*分享来源 如：腾讯网(可选)*/
-            pics:'', /*分享图片的路径(可选)*/
-            style:'102',
-            width:88,
-            height:30
+            desc:'你不再需要的,却是他们渴求的!百姓网邀您加入\"让衣物飞\"公益活动,让您的闲置物品飞到山区,让孩子们脸上的笑容更灿烂!|在中国的偏远地区,有这样一群孩子急需我们的关注和呵护,百姓网携手全国各工艺NGO组织,邀您参与\"让衣物飞\"公益活动',
+            title:'\"让衣物飞\"爱心公益活动',
+            summary:'在中国的偏远地区,有这样一群孩子急需我们的关注和呵护,百姓网携手全国各工艺NGO组织,邀您参与\"让衣物飞\"公益活动',
+            pics:'fly.png',
+            flash: '',
+            site:'QQ分享',
+            style:'103',
+            width:50,
+            height:16
         };
         var s = [];
         for(var i in p){
             s.push(i + '=' + encodeURIComponent(p[i]||''));
         }
-        document.write(['<button  class="" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?',s.join('&'),'" target="_blank">分享到Qzone</button>'].join(''));
-    })();
-</script>
+        var url="http://connect.qq.com/widget/shareqq/index.html?"+s.join('&')+'';
+         window.open(url);
+    }
 
-<script type="text/javascript">
-    (function(){
-        var p = {
-            url:location.href, /*获取URL，可加上来自分享到QQ标识，方便统计*/
-            desc:'', /*分享理由(风格应模拟用户对话),支持多分享语随机展现（使用|分隔）*/
-            title:'', /*分享标题(可选)*/
-            summary:'', /*分享摘要(可选)*/
-            pics:'', /*分享图片(可选)*/
-            flash: '', /*视频地址(可选)*/
-            site:'', /*分享来源(可选) 如：QQ分享*/
-            style:'102',
-            width:63,
-            height:24
-        };
-        var s = [];
-        for(var i in p){
-            s.push(i + '=' + encodeURIComponent(p[i]||''));
-        }
-        document.write(['<button class="" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank">分享到QQ</button>'].join(''));
-    })();
+
+    function wbjump(){
+       $("#wbjump");
+    }
 </script>
 <script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
-<script src="http://qzonestyle.gtimg.cn/qzone/app/qzlike/qzopensl.js#jsdate=20111201" charset="utf-8"></script>
-
 </body>
 
 
