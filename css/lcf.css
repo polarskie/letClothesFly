@@ -42,7 +42,7 @@ div{
     height: 986px;
     background-image: url(../pic/paper.jpg);
     background-repeat: round;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 20px black;
     position: relative;
     z-index: 9;
 }
@@ -150,7 +150,7 @@ div{
     height: 1140px;
     background-image: url(../pic/paper.jpg);
     background-repeat: round;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 20px black;
     position: relative;
     z-index: 9;
 }
