@@ -237,15 +237,27 @@ div{
     background-image: url(../pic/logos.png);
     background-position: -22px -1342px;
 }
+
+.share
+{
+    text-align: center;
+}
 .share-link
 {
     width: 140px;
     height: 30px;
     line-height: 30px;
-    background-color: red;
+    background-color: RGB(237 , 71, 61);
     padding: 8px;
     border-radius: 23px;
     text-align: center;
+    display: inline-block;
+    margin: 12px;
+}
+
+.share-link:hover
+{
+    cursor: pointer;
 }
 
 .qq
@@ -266,6 +278,21 @@ div{
     float: left;
 }
 
+.qrcode-container
+{
+    width: 500px;
+    margin: 40px auto;
+}
+.qrcode-description
+{
+    width: 168px;
+    display: inline-block;
+    margin: 0 12px;
+}
+.qrcode-text
+{
+    margin: 0;
+}
 .weixin
 {
     width: 30px;
@@ -273,4 +300,11 @@ div{
     background-image: url(../pic/logos.png);
     background-position: -105px -1449px;
     float: left;
+}
+.qrcode
+{
+    width: 144px;
+    height: 144px;
+    display: inline-block;
+    background-color: black;
 }
