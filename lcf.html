@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:wb="http://open.weibo.com/wb" lang="en">
 <head>
     <meta charset="UTF-8">
     <title></title>
     <link href="css/lcf.css" rel="stylesheet">
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=&debug=true" type="text/javascript"
+            charset="utf-8"></script>
 </head>
 <body>
 <div class="outer-container">
     <div class="header">
+        <div class="fluctuate-border"></div>
     </div>
     <div class="needinghelp-outer-container">
         <div class="needinghelp-inner-container">
@@ -152,18 +155,30 @@
                 <h2 class="footer-header">
                     分享活动，传递善念
                 </h2>
-                <div class="share-link-container">
-                        <div class="share-link">
-                            <div>
+                <div class="share-link-container clearfix">
+                    <div class="share-link true-link" onclick="qqjump()">
+                        <div>
                             <div class="qq">
                             </div>
                             <b>分享至QQ</b></div>
+                    </div>
+                    <div class="share-link" onclick="wbjump()">
+                        <div class="weibo">
                         </div>
-                        <div class="share-link">
-                            <div class="weibo">
-                            </div>
-                            <b>分享至微博</b>
+                        <b>分享至微博</b>
+                        <div class="zero">
+                        <div id="wbclick1">
+
+                            <wb:share-button addition="simple"  type="button" default_text="你不再需要的,却是他们渴求的!我们邀请您加入 让衣物飞爱心公益行动,让您闲置的衣物飞到山区,让孩子们脸上的笑容更灿烂!" pic="http%3A%2F%2Futopia.polarsky.cc%2FletClouthFly%2Ffly.png" picture_search="false"></wb:share-button>
+
                         </div>
+                        <div id="wbclick2">
+
+                            <wb:share-button addition="simple"  type="button" default_text="你不再需要的,却是他们渴求的!我们邀请您加入 让衣物飞爱心公益行动,让您闲置的衣物飞到山区,让孩子们脸上的笑容更灿烂!" pic="http%3A%2F%2Futopia.polarsky.cc%2FletClouthFly%2Ffly.png" picture_search="false"></wb:share-button>
+
+                        </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="qrcode-container">
                     <div class="qrcode-description">
@@ -183,5 +198,6 @@
     </div>
 </div>
 <script src="js/lcf.js"></script>
+<script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
 </body>
 </html>

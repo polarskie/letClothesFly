@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=&debug=true" type="text/javascript"
+            charset="utf-8"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="qqshare">
+
+            <label class="share qq" onclick="qqjump()"><span class="fa fa-qq" style="border-right-width: 4px;padding-right: 8px"></span>分享至QQ </label>
+
+
+            <label class="wechat" ><span class="fa fa-weixin">  </span> 扫码分享至朋友圈</label>
+
+        </div>
+        <div class="weiboshare ">
+            <label class="share" onclick="wbjump()"><span class="fa fa-weibo"></span> 分享至微博</label>
+            <div id="wbclick">
+
+                <wb:share-button addition="simple"  type="button" default_text="你不再需要的,却是他们渴求的!我们邀请您加入 让衣物飞爱心公益行动,让您闲置的衣物飞到山区,让孩子们脸上的笑容更灿烂!" pic="http%3A%2F%2Futopia.polarsky.cc%2FletClouthFly%2Ffly.png" picture_search="false"></wb:share-button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+
+
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+    function qqjump(){
+        var p = {
+            url:location.href,
+            desc:'你不再需要的,却是他们渴求的!百姓网邀您加入\"让衣物飞\"公益活动,让您的闲置物品飞到山区,让孩子们脸上的笑容更灿烂!|在中国的偏远地区,有这样一群孩子急需我们的关注和呵护,百姓网携手全国各工艺NGO组织,邀您参与\"让衣物飞\"公益活动',
+            title:'\"让衣物飞\"爱心公益活动',
+            summary:'在中国的偏远地区,有这样一群孩子急需我们的关注和呵护,百姓网携手全国各工艺NGO组织,邀您参与\"让衣物飞\"公益活动',
+            pics:'fly.png',
+            flash: '',
+            site:'QQ分享',
+            style:'103',
+            width:50,
+            height:16
+        };
+        var s = [];
+        for(var i in p){
+            s.push(i + '=' + encodeURIComponent(p[i]||''));
+        }
+        var url="http://connect.qq.com/widget/shareqq/index.html?"+s.join('&')+'';
+         window.open(url);
+    }
+
+
+    function wbjump(){
+       $("#wbjump");
+    }
+</script>
+<script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
+</body>
+
+
+<script>
+</script>
+</html>

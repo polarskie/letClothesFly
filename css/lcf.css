@@ -29,9 +29,22 @@ div{
     background-position: center;
 }
 
+.fluctuate-border
+{
+    position: relative;
+    height: 22px;
+    background-image: url(../pic/logos.png);
+    background-position: 0 -1504px;
+    top: 605px;
+}
 .needinghelp-outer-container
 {
     height: 986px;
+    background-image: url(../pic/paper.jpg);
+    background-repeat: round;
+    box-shadow: 0 0 10px black;
+    position: relative;
+    z-index: 9;
 }
 
 .needinghelp-inner-container
@@ -62,6 +75,7 @@ div{
     background-color: RGB(255, 167, 157);
     overflow: hidden;
     position: relative;
+    z-index: 6;
 }
 
 .color-cloth-1
@@ -133,7 +147,12 @@ div{
 
 .partition-outer-container
 {
-    height: 1100px;
+    height: 1140px;
+    background-image: url(../pic/paper.jpg);
+    background-repeat: round;
+    box-shadow: 0 0 10px black;
+    position: relative;
+    z-index: 9;
 }
 
 .partition-inner-container
@@ -141,16 +160,17 @@ div{
     width: 1024px;
     height: 1070px;
     margin: auto;
+    padding: 60px 0 0;
     font-size: 1.1em;
     background-image: url(../pic/logos.png);
-    background-position: -10px -80px;
+    background-position: -10px -20px;
 }
 
 .partition-header
 {
     width: 300px;
     height: 128px;
-    margin: 1.5em auto 1.5em auto;
+    margin: 0 auto 60px auto;
     line-height: 128px;
     text-align: center;
     font-size: 2.7em;
@@ -202,6 +222,19 @@ div{
     float: left;
 }
 
+.partition-link:hover
+{
+    cursor: pointer;
+}
+.pencil
+{
+    width: 60px;
+    height: 60px;
+    background-image: url(../pic/logos.png);
+    background-position: -238px -1442px;
+    float: right;
+    margin-right: 10px;
+}
 .company-partition-description
 {
     font-size: 2em;
@@ -314,6 +347,12 @@ div{
 {
     text-align: center;
 }
+.share-link-container
+{
+    width: 360px;
+    margin: auto;
+}
+
 .share-link
 {
     width: 140px;
@@ -323,11 +362,12 @@ div{
     padding: 8px;
     border-radius: 23px;
     text-align: center;
-    display: inline-block;
+    display: block;
     margin: 12px;
+    float: left;
 }
 
-.share-link:hover
+.true-link:hover
 {
     cursor: pointer;
 }
@@ -349,6 +389,27 @@ div{
     background-position: -41px -1449px;
     float: left;
 }
+.zero
+{
+    width: 0;
+    height: 0;
+}
+
+#wbclick1{
+    opacity: 0;
+    position: relative;
+    top: -25px;
+    display: block;
+    cursor: pointer;
+}
+#wbclick2{
+    opacity: 0;
+     position: relative;
+     top: -65px;
+     left: 65px;
+     display: block;
+     cursor: pointer;
+ }
 
 .qrcode-container
 {
@@ -379,4 +440,21 @@ div{
     height: 144px;
     display: inline-block;
     background-color: black;
+}
+
+.clearfix:before,
+.clearfix:after
+{
+    content: " ";
+    display: table;
+}
+
+.clearfix:after
+{
+    clear: both;
+}
+
+.clearfix
+{
+    *zoom: 1;
 }
