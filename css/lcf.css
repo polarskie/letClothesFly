@@ -61,6 +61,38 @@ div{
     height: 1095px;
     background-color: RGB(255, 167, 157);
     overflow: hidden;
+    position: relative;
+}
+
+.color-cloth-1
+{
+    background-color:RGB(255, 150, 154);
+    width: 3000px;
+    height: 3000px;
+    z-index: 1;
+    position: absolute;
+    top: 600px;
+    left: -2000px;
+    transform: rotate(40deg);
+    -ms-transform: rotate(40deg);		/* IE 9 */
+    -webkit-transform: rotate(40deg);	/* Safari and Chrome */
+    -o-transform: rotate(40deg);		/* Opera */
+    -moz-transform: rotate(40deg);		/* Firefox */
+}
+
+.color-cloth-2
+{
+    background-color:RGB(255, 150, 154);
+    width: 3000px;
+    height: 3000px;
+    z-index: 2;
+    position: absolute;
+    top: 600px;
+    transform: rotate(80deg);
+    -ms-transform: rotate(80deg);		/* IE 9 */
+    -webkit-transform: rotate(80deg);	/* Safari and Chrome */
+    -o-transform: rotate(80deg);		/* Opera */
+    -moz-transform: rotate(80deg);		/* Firefox */
 }
 
 .scene-inner-container
@@ -69,6 +101,8 @@ div{
     margin: auto;
     padding: 2em 0 2em 0;
     font-size: 1.1em;
+    z-index: 3;
+    position: relative;
 }
 
 .scene-header
@@ -186,14 +220,50 @@ div{
 .outer-footer
 {
     background-color: RGB(255, 167, 157);
-    height: 1577px;
+    height: 1470px;
     color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.color-cloth-3
+{
+    background-color:RGB(255, 150, 154);
+    width: 3000px;
+    height: 3000px;
+    z-index: 1;
+    position: absolute;
+    top: 538px;
+    left: -1000px;
+    transform: rotate(7deg);
+    -ms-transform: rotate(7deg);		/* IE 9 */
+    -webkit-transform: rotate(7deg);	/* Safari and Chrome */
+    -o-transform: rotate(7deg);		/* Opera */
+    -moz-transform: rotate(7deg);		/* Firefox */
+}
+
+.color-cloth-4
+{
+    background-color:RGB(255, 150, 154);
+    width: 3000px;
+    height: 3000px;
+    z-index: 2;
+    position: absolute;
+    top: 600px;
+    left: 800px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);		/* IE 9 */
+    -webkit-transform: rotate(45deg);	/* Safari and Chrome */
+    -o-transform: rotate(45deg);		/* Opera */
+    -moz-transform: rotate(45deg);		/* Firefox */
 }
 .inner-footer
 {
     width: 1024px;
     margin: auto;
     padding: 40px 0;
+    position: relative;
+    z-index: 3;
 }
 .footer-header
 {
@@ -309,13 +379,4 @@ div{
     height: 144px;
     display: inline-block;
     background-color: black;
-}
-
-.color-cloth-1
-{
-    background-color: purple;/*RGB(255, 150, 154);*/
-    width: 3000px;
-    height: 3000px;
-    position: absolute;
-    z-index: -10;
 }
