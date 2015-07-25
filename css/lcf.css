@@ -60,6 +60,7 @@ div{
 {
     height: 1095px;
     background-color: RGB(255, 167, 157);
+    overflow: hidden;
 }
 
 .scene-inner-container
@@ -133,7 +134,8 @@ div{
 
 .partition-personal
 {
-    margin: 100px 0;
+    margin: 80px 0;
+    height: 370px;
 }
 
 .partition-list
@@ -151,7 +153,7 @@ div{
 
 .partition-company
 {
-    margin-top: 210px;
+    margin-top: 170px;
 }
 
 .partition-link
@@ -221,7 +223,7 @@ div{
 
 .division
 {
-    border: dashed 2px;
+    border-top: dashed 2px;
 }
 .cooperation-company
 {
@@ -307,4 +309,13 @@ div{
     height: 144px;
     display: inline-block;
     background-color: black;
+}
+
+.color-cloth-1
+{
+    background-color: purple;/*RGB(255, 150, 154);*/
+    width: 3000px;
+    height: 3000px;
+    position: absolute;
+    z-index: -10;
 }
