@@ -44,7 +44,7 @@ div{
     min-width: 1024px;
     height: 986px;
     background-image: url(../pic/paper.jpg);
-    background-repeat: round;
+    background-repeat: repeat;
     box-shadow: 0 0 20px black;
     position: relative;
     z-index: 9;
@@ -155,7 +155,7 @@ div{
     min-width: 1024px;
     height: 1140px;
     background-image: url(../pic/paper.jpg);
-    background-repeat: round;
+    background-repeat: repeat;
     box-shadow: 0 0 20px black;
     position: relative;
     z-index: 9;
