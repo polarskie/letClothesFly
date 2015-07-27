@@ -121,6 +121,7 @@ div{
 
 .scene-header
 {
+    text-indent: -9999px;
     width: 300px;
     height: 128px;
     background-image: url(../pic/logos.png);
@@ -168,6 +169,7 @@ div{
 
 .partition-header
 {
+    text-indent: -9999px;
     width: 300px;
     height: 128px;
     margin: 0 auto 60px auto;
@@ -175,10 +177,25 @@ div{
     text-align: center;
     font-size: 2.7em;
 }
-.partition-tunnel
+.partition-tunnel-personal
 {
+    text-indent: -9999px;
     margin: 12px auto 36px 240px;
+    width: 250px;
+    height: 38px;
     font-size: 2em;
+    background-image: url(../pic/logos.png);
+    background-position: -37px -1560px;
+}
+.partition-tunnel-company
+{
+    text-indent: -9999px;
+    margin: 12px auto 36px 240px;
+    width: 250px;
+    height: 38px;
+    font-size: 2em;
+    background-image: url(../pic/logos.png);
+    background-position: -315px -1557px;
 }
 .partition-paragraph
 {
@@ -226,20 +243,16 @@ div{
 {
     cursor: pointer;
 }
-.pencil
-{
-    width: 60px;
-    height: 60px;
-    background-image: url(../pic/logos.png);
-    background-position: -238px -1442px;
-    float: right;
-    margin-right: 10px;
-}
 .company-partition-description
 {
+    text-indent: -9999px;
     font-size: 2em;
     margin: 0;
     color: white;
+    width: 320px;
+    height: 48px;
+    background-image: url(../pic/logos.png);
+    background-position: -598px -1550px;
 }
 .partition-description-container
 {
