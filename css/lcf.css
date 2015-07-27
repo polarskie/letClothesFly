@@ -311,11 +311,38 @@ div{
     position: relative;
     z-index: 3;
 }
-.footer-header
+.footer-header-ngo
 {
+    text-indent: -9999px;
     font-size: 2.4em;
     text-align: center;
-    margin: 25px 0 60px;
+    margin: 25px auto 60px;
+    width: 240px;
+    height: 48px;
+    background-image: url(../pic/logos.png);
+    background-position: -48px -1643px;
+}
+.footer-header-company
+{
+    text-indent: -9999px;
+    font-size: 2.4em;
+    text-align: center;
+    margin: 25px auto 60px;
+    width: 240px;
+    height: 48px;
+    background-image: url(../pic/logos.png);
+    background-position: -338px -1643px;
+}
+.footer-header-share
+{
+    text-indent: -9999px;
+    font-size: 2.4em;
+    text-align: center;
+    margin: 25px auto 60px;
+    width: 400px;
+    height: 48px;
+    background-image: url(../pic/logos.png);
+    background-position: -690px -1643px;
 }
 .cooperation-ngo
 {
