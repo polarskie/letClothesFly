@@ -19,10 +19,12 @@ div{
 .outer-container
 {
     max-width: 1920px;
+    margin: auto;
 }
 
 .header
 {
+    min-width: 1024px;
     max-width: 1920px;
     height: 621px;
     background-image: url(../pic/header.jpg);
@@ -39,6 +41,7 @@ div{
 }
 .needinghelp-outer-container
 {
+    min-width: 1024px;
     height: 986px;
     background-image: url(../pic/paper.jpg);
     background-repeat: round;
@@ -71,6 +74,7 @@ div{
 
 .scene-outer-container
 {
+    min-width: 1024px;
     height: 1095px;
     background-color: RGB(255, 167, 157);
     overflow: hidden;
@@ -148,6 +152,7 @@ div{
 
 .partition-outer-container
 {
+    min-width: 1024px;
     height: 1140px;
     background-image: url(../pic/paper.jpg);
     background-repeat: round;
@@ -265,6 +270,7 @@ div{
 }
 .outer-footer
 {
+    min-width: 1024px;
     background-color: RGB(255, 167, 157);
     height: 1470px;
     color: white;
