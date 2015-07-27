@@ -479,7 +479,8 @@ div{
     width: 144px;
     height: 144px;
     display: inline-block;
-    background-color: black;
+    background-image: url(../pic/weixin.png);
+    background-size: cover;
 }
 
 .clearfix:before,
